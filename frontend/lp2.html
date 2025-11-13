@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skyline International University</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <section class="hero">
+        <h1>Skyline International University</h1>
+        <p>Shaping Global Leaders in Business and Design</p>
+        <button onclick="showFees(2)">Check Course-wise Fees</button>
+        <button>Download Brochure</button>
+        <button>Apply Now</button>
+    </section>
+
+    <form id="leadForm2">
+        <h2>Apply Now</h2>
+        <input name="fullName" placeholder="Full Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="tel" name="phone" placeholder="Phone (10-digit)" pattern="[0-9]{10}" required />
+        <input name="state" placeholder="State" required />
+        <input name="course" placeholder="Course Interested" required />
+        <input name="year" placeholder="Intake Year" required />
+        <label><input type="checkbox" required /> I consent to be contacted</label>
+        <button type="submit">Submit</button>
+        <p id="msg2"></p>
+    </form>
+
+    <div id="feeModal" class="modal">
+        <div class="modal-content">
+            <h3>Course-wise Fee Details</h3>
+            <p id="feeDetails"></p>
+            <button onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
